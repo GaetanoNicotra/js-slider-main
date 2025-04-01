@@ -117,4 +117,15 @@ nextButton.addEventListener('click', nextImage);
 leftButton.addEventListener('click', previousImage);
 
 // autoplay
-const intervalId = setInterval(nextImage, 2000);
+const intervalId = setInterval(nextImage, 3000);
+
+// funzione che mi crea le singole thumbnails
+
+const createThumnails = (galleryImage) => {
+  const { image } = galleryImage;
+
+  let thumbnails = `
+   <div class="col-2">
+                    <img class="card" src="./${image}" alt="1">
+                </div>`
+}
